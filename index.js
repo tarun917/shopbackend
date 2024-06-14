@@ -10,9 +10,6 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors());
 
-const express = require('express');
-const cors = require('cors');
-
 // yahan se start
 app.use(cors({
   origin: 'https://shopfrontend-1.onrender.com', // Replace with your frontend URL
