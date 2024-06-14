@@ -1,6 +1,6 @@
 const port = 4000;
 const express = require("express");
-const app = express();
+const app = require("express");
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const multer = require("multer");
@@ -12,7 +12,7 @@ app.use(cors());
 
 const express = require('express');
 const cors = require('cors');
-const app = express();
+
 // yahan se start
 app.use(cors({
   origin: 'https://shopfrontend-1.onrender.com', // Replace with your frontend URL
