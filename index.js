@@ -10,6 +10,23 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors());
 
+const express = require('express');
+const cors = require('cors');
+const app = express();
+// yahan se start
+app.use(cors({
+  origin: 'https://shopfrontend-1.onrender.com', // Replace with your frontend URL
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true
+}));
+
+// Your routes here
+
+app.listen(4000, () => {
+  console.log('Server running on port 4000');
+});
+
+// yaha tak
 // Database Connection With MongoDB
 mongoose.connect("mongodb+srv://tarun0503:Tarun0503@cluster0.f7aqgzv.mongodb.net/e-commerce");
 // paste your mongoDB Connection string above with password
