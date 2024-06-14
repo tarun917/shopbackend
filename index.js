@@ -19,9 +19,7 @@ app.use(cors({
 
 // Your routes here
 
-app.listen(4000, () => {
-  console.log('Server running on port 4000');
-});
+
 
 // yaha tak
 // Database Connection With MongoDB
