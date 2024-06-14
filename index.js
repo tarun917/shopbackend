@@ -7,7 +7,7 @@ const multer = require("multer");
 const path = require("path");
 const cors = require("cors");
 
-app.use(express.json());
+
 
 
 // yahan se start
