@@ -8,7 +8,7 @@ const path = require("path");
 const cors = require("cors");
 
 app.use(express.json());
-app.use(cors());
+
 
 // yahan se start
 app.use(cors({
