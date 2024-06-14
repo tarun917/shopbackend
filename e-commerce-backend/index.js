@@ -104,7 +104,7 @@ const Product = mongoose.model("Product", {
 });
 
 app.get("/", (req, res) => {
-  res.send("Root");
+  res.send("Root, Server is running on port 4000");
 });
 
 //Create an endpoint at ip/login for login the user and giving auth-token
