@@ -10,6 +10,12 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors());
 
+//for admin panel
+app.use(cors({
+  origin: 'https://shopadmin-8w2e.onrender.com', // Replace with your actual admin panel URL
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true
+}));
 // yahan se start
 app.use(cors({
   origin: 'https://shopfrontend-1.onrender.com', // Replace with your frontend URL
