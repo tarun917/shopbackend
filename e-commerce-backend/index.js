@@ -10,10 +10,10 @@ const cors = require("cors");
 app.use(express.json());
 app.use(cors());
 
-//add cors code for add frontend to backend
+//add cors code for add frontend to backend and backend to admin panel
 const cors = require('cors');
 app.use(cors({
-  origin: 'https://shopfrontend-1.onrender.com', // Replace with your frontend's URL
+  origin: ['https://shopfrontend-1.onrender.com', 'https://shopadmin-8w2e.onrender.com'] // Replace with your frontend's URL
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true
 }));
